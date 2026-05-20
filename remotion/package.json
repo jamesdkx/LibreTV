@@ -1,0 +1,24 @@
+{
+  "name": "dashen-taiwan-remotion",
+  "version": "1.0.0",
+  "description": "大申台灣誌 YouTube 影片製作工具",
+  "scripts": {
+    "start": "npx remotion studio",
+    "build": "npx remotion render",
+    "render:intro": "npx remotion render src/index.ts ChannelIntro out/intro.mp4",
+    "render:title": "npx remotion render src/index.ts TitleCard out/title.mp4",
+    "render:lower-third": "npx remotion render src/index.ts LowerThird out/lower-third.mp4",
+    "render:outro": "npx remotion render src/index.ts Outro out/outro.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
